@@ -3,6 +3,7 @@
 ### 🧩 Step 1: Base Image declaration
 ```bash
 FROM php:8.2-alpine
+
 # FROM nginx:alpine
 # FROM httpd:alpine
 # FROM node:18-alpine
