@@ -22,3 +22,13 @@ minikube version
 
 minikube start --driver=docker
 ```
+### 🧩 Step 3: Docker ENV for Minikube
+
+```bash
+eval $(minikube docker-env)
+```
+
+### 🧩 Step 4: Minikube Docker ENV to Docker ENV
+```bash
+eval $(minikube docker-env -u)
+```
