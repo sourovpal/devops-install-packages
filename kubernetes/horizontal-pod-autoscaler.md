@@ -1,6 +1,6 @@
 # **Horizontal Pod Autoscaler (HPA)**
 
-### 🧩 Step 1: Basic Configration
+### 🧩 Step 1: Autoscale Command
 
 ```bash
 kubectl autoscale deployment <deployment-name> \
@@ -11,3 +11,6 @@ kubectl autoscale deployment <deployment-name> \
 📌 --cpu-percent=50% - যখন Over (51% - 100%) হবে তখনি নতুন Pod তৈরি হবে\
 📌 --min=2 -  Min 2 টি Pod Run থাকবে বাকি গুলো traffic এর উপর ভিত্তি করে বাড়বে কমবে\
 📌 --max=10 - Traffic বেশি হলে Max 10 Pod তৈরি হবে এর বেশি হবে না
+
+📌 cpu: "1000m" = 1 Core
+📌 memory: "1024Mi" = 1GB | memory: "1Gi" = 1GB
