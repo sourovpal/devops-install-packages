@@ -20,10 +20,8 @@
   # Offline
   # This Jenkins instance appears to be offline.
   sudo vim /etc/docker/daemon.json
+  { "dns": ["8.8.8.8", "8.8.4.4"] }
 
-  {
-    "dns": ["8.8.8.8", "8.8.4.4"]
-  }
   # Restart Docker and Jenkins Container
   sudo systemctl restart docker
   docker restart jenkins
