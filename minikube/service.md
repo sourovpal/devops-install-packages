@@ -1,4 +1,4 @@
-# **NodePort Service File Configration**
+# **Service File Configration**
 
 nodeport-service.yaml
 
