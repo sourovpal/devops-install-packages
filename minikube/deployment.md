@@ -63,6 +63,9 @@ spec:
 ### 🧩 Others Commands
 
 ```bash
+  👉 kubectl apply -f .
+  👉 kubectl apply -f <file-name>.yaml
+
   👉 kubectl get pods                                                    # Show all Pods
   👉 kubectl get deployments                                             # Show all deployments
   👉 kubectl describe deployment/html-website-deployment                 # Show existing deployment configration details
