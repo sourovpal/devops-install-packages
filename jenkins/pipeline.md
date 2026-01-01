@@ -1,7 +1,28 @@
 # Jenkins Pipeline
 
-### 🧩 Simple Pipeline with ssh login, build docker image and restart pods
+### 🧩 Simple Pipeline Echo Hello World
 
+```bash
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello Jenkins Pipeline!'
+            }
+        }
+
+        stage('Run Shell Command') {
+            steps {
+                sh 'echo "Pipeline is working successfully"'
+            }
+        }
+    }
+}
+```
+
+### 🧩 Simple Pipeline with ssh login, build docker image and restart pods
 
 ```bash
 pipeline {
@@ -47,4 +68,5 @@ pipeline {
     }
 }
 ```
+
 
