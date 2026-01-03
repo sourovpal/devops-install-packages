@@ -27,6 +27,14 @@ inventory.ini
   # Ping Test
   ansible all -i inventory.ini -m ping
 
+  /*
+    ansible all \
+    -i inventory.ini \
+    --user ubuntu \
+    --private-key ~/.ssh/id_rsa \
+    -m ping
+  */
+
 ```
 
 ### 🧩 Install Nginx
@@ -55,6 +63,15 @@ nginx.yml
           enabled: yes
 
   # Run: ansible-playbook -i inventory.ini nginx.yml
+
+  /*
+      ansible-playbook \
+      -i inventory.ini \
+      --user ubuntu \
+      --private-key ~/.ssh/id_rsa \
+      nginx.yml
+  */
+
 
 ```
 
